@@ -1,0 +1,31 @@
+2024/10/23-18:50:14.627 2860 Reusing MANIFEST E:\wabot\.wwebjs_auth\session-whatsapp-bot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/23-18:50:14.630 2860 Recovering log #143
+2024/10/23-18:50:15.316 2860 Reusing old log E:\wabot\.wwebjs_auth\session-whatsapp-bot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000143.log 
+2024/10/23-18:50:51.322 3004 Level-0 table #148: started
+2024/10/23-18:50:51.916 3004 Level-0 table #148: 469996 bytes OK
+2024/10/23-18:50:52.041 3004 Delete type=0 #143
+2024/10/23-18:50:52.042 3004 Manual compaction at level-0 from '\x006\x00\x00\x00' @ 72057594037927935 : 1 .. '\x007\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/10/23-18:50:59.540 2ae8 Compacting 1@1 + 1@2 files
+2024/10/23-18:51:02.175 2ae8 Generated table #149@1: 33955 keys, 1416796 bytes
+2024/10/23-18:51:02.175 2ae8 Compacted 1@1 + 1@2 files => 1416796 bytes
+2024/10/23-18:51:02.423 2ae8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/10/23-18:51:02.425 2ae8 Delete type=2 #145
+2024/10/23-18:51:02.425 2ae8 Delete type=2 #148
+2024/10/23-19:02:46.772 3004 Level-0 table #151: started
+2024/10/23-19:02:47.118 3004 Level-0 table #151: 1407292 bytes OK
+2024/10/23-19:02:47.171 3004 Delete type=0 #147
+2024/10/23-19:03:04.494 32bc Compacting 1@1 + 1@2 files
+2024/10/23-19:03:05.314 32bc Generated table #152@1: 39433 keys, 1732668 bytes
+2024/10/23-19:03:05.314 32bc Compacted 1@1 + 1@2 files => 1732668 bytes
+2024/10/23-19:03:05.358 32bc compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/10/23-19:03:05.359 32bc Delete type=2 #149
+2024/10/23-19:03:05.359 32bc Delete type=2 #151
+2024/10/23-19:12:03.367 2340 Level-0 table #154: started
+2024/10/23-19:12:04.552 2340 Level-0 table #154: 1495612 bytes OK
+2024/10/23-19:12:05.445 2340 Delete type=0 #150
+2024/10/23-19:12:14.160 2340 Compacting 1@1 + 1@2 files
+2024/10/23-19:12:16.673 2340 Generated table #155@1: 43440 keys, 1960224 bytes
+2024/10/23-19:12:16.673 2340 Compacted 1@1 + 1@2 files => 1960224 bytes
+2024/10/23-19:12:17.461 2340 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/10/23-19:12:17.468 2340 Delete type=2 #152
+2024/10/23-19:12:17.468 2340 Delete type=2 #154
