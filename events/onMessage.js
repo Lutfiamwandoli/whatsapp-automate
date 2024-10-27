@@ -95,9 +95,7 @@ const onMessageReceived = async (message, client) => {
             return;
         }
 
-        // Optionally, you can handle unrecognized commands here
-        await message.reply('Perintah tidak dikenali. Ketik !help untuk daftar perintah.');
-
+        
     } catch (error) {
         console.error('Error handling message:', error);
         await message.reply('Terjadi kesalahan saat memproses perintah. Silakan coba lagi.');
