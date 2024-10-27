@@ -66,39 +66,31 @@ const stickerCommands = [
     '!take'
 ];
 
-// Function to handle messages
 const onMessageReceived = async (message, client) => {
-    try {
-        // Handle job message format
-        if (/^Job:\s*(.*)\nHunter:\s*(.*)\nWorker:\s*(.*)\nFee:\s*(\d+)\nstatus:\s*selesai/i.test(message.body)) {
-            await handleJob(message);
+    // Handle job message format
+    if (/^Job:\s*(.*)\nHunter:\s*(.*)\nWorker:\s*(.*)\nFee:\s*(\d+)\nstatus:\s*selesai/i.test(message.body)) {
+        await handleJob(message);
+        return;
+    }
+
+    // Handle commands
+    for (const [command, handler] of Object.entries(commandHandlers)) {
+        if (message.body.startsWith(command)) {
+            await handler(message, client);
             return;
         }
+    }
 
-        // Check if the message starts with any command and handle it
-        for (const [command, handler] of Object.entries(commandHandlers)) {
-            if (message.body.startsWith(command)) {
-                await handler(message, client);
-                return;
-            }
-        }
+    // Handle sticker commands
+    if (stickerCommands.some(cmd => message.body.startsWith(cmd))) {
+        await handleStickerCommands(message, client);
+        return;
+    }
 
-        // Handle sticker commands
-        if (stickerCommands.some(cmd => message.body.startsWith(cmd))) {
-            await handleStickerCommands(message, client);
-            return;
-        }
-
-        // Handle list commands
-        if (listCommands.some(cmd => message.body.startsWith(cmd))) {
-            await handleListCommands(message, client);
-            return;
-        }
-
-        
-    } catch (error) {
-        console.error('Error handling message:', error);
-        await message.reply('Terjadi kesalahan saat memproses perintah. Silakan coba lagi.');
+    // Handle list commands
+    if (listCommands.some(cmd => message.body.startsWith(cmd))) {
+        await handleListCommands(message, client);
+        return;
     }
 };
 
